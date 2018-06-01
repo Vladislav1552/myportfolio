@@ -1,9 +1,8 @@
 {
-  "main.css": "static/css/main.0d1bf49e.css",
-  "main.css.map": "static/css/main.0d1bf49e.css.map",
-  "main.js": "static/js/main.ba6241ca.js",
-  "main.js.map": "static/js/main.ba6241ca.js.map",
-  "static\\media\\1stslide.png": "static/media/1stslide.78a05db2.png",
+  "main.css": "static/css/main.58e1f602.css",
+  "main.css.map": "static/css/main.58e1f602.css.map",
+  "main.js": "static/js/main.110814c3.js",
+  "main.js.map": "static/js/main.110814c3.js.map",
   "static\\media\\Instagram_icon.png": "static/media/Instagram_icon.07e509ef.png",
   "static\\media\\VK.png": "static/media/VK.e2935bf0.png",
   "static\\media\\aboutpicture.png": "static/media/aboutpicture.e0bdcae7.png",
@@ -12,9 +11,11 @@
   "static\\media\\bem.png": "static/media/bem.ba52c11d.png",
   "static\\media\\game.gif": "static/media/game.6ebd740b.gif",
   "static\\media\\github.png": "static/media/github.78ec5f50.png",
+  "static\\media\\landscape-2028214.svg": "static/media/landscape-2028214.46fe91e2.svg",
   "static\\media\\logo.svg": "static/media/logo.5d5d9eef.svg",
   "static\\media\\social-facebook.png": "static/media/social-facebook.75c194b9.png",
   "static\\media\\team.jpg": "static/media/team.c5a3a38c.jpg",
+  "static\\media\\videoplayback.mp4": "static/media/videoplayback.dbd6fec2.mp4",
   "static\\media\\web-trifecta_html5_css3_js-strict.png": "static/media/web-trifecta_html5_css3_js-strict.9a0b0519.png",
   "static\\media\\workflow-illustration.png": "static/media/workflow-illustration.75bd34ee.png"
 }
