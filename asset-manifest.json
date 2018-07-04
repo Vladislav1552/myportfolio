@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.062f9c29.css",
   "main.css.map": "static/css/main.062f9c29.css.map",
-  "main.js": "static/js/main.6d16151e.js",
-  "main.js.map": "static/js/main.6d16151e.js.map",
+  "main.js": "static/js/main.4ec8ffe2.js",
+  "main.js.map": "static/js/main.4ec8ffe2.js.map",
   "static\\media\\9114.otf": "static/media/9114.524d720f.otf",
   "static\\media\\Instagram.png": "static/media/Instagram.6d2ab22b.png",
   "static\\media\\PhotoMe.jpg": "static/media/PhotoMe.4bf2c775.jpg",
@@ -22,6 +22,7 @@
   "static\\media\\team.jpg": "static/media/team.c5a3a38c.jpg",
   "static\\media\\unnamed.png": "static/media/unnamed.79718bf8.png",
   "static\\media\\videoplayback.mp4": "static/media/videoplayback.dbd6fec2.mp4",
+  "static\\media\\videoplayback.webm": "static/media/videoplayback.21dccfad.webm",
   "static\\media\\web-trifecta_html5_css3_js-strict.png": "static/media/web-trifecta_html5_css3_js-strict.9a0b0519.png",
   "static\\media\\workflow-illustration.png": "static/media/workflow-illustration.75bd34ee.png"
 }
