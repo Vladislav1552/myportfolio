@@ -1,0 +1,198 @@
+.Menu_сontainer {
+  height: 110%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.Menu {
+  position: fixed;
+  top: 3%;
+  left: 0%;
+  display: none;
+  height: auto;
+  width: 100px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-animation: menu 0.2s linear forwards;
+  animation: menu 0.2s linear forwards;
+  z-index: 2;
+}
+
+.wrap {
+  height: 500px;
+}
+
+.clickButton {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 105px;
+  color: white;
+}
+
+.clickButton_img {
+  width: 25px;
+  height: 25px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: black;
+  width: 49%;
+  height: 100%;
+}
+
+.item {
+  display: none;
+  background-color: rgba(7, 10, 10, 0.9);
+  width: 104px;
+  height: 45px;
+  margin: 1px;
+  color: white;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.item_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  height: 100%;
+  width: auto;
+}
+
+.item::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  border-radius: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.item:hover::after {
+  content: '';
+  display: block;
+  margin-top: -5px;
+  -webkit-animation: Menu 0.5s forwards;
+  animation: Menu 0.5s forwards;
+  background: rgb(13, 229, 236);
+}
+
+.menu_icon {
+  width: 32px;
+  height: 35px;
+}
+
+.icon_vk {
+  background: url(../img/vk.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.icon_github {
+  background: url(../img/github.png) no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+.icon_instagram {
+  background: url(../img/Instagram.png) no-repeat;
+  background-size: 60%;
+  background-position: center;
+}
+
+.icon_facebook {
+  background: url(../img/facebook.png) no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+@-webkit-keyframes Menu {
+  0% {
+    width: 0%;
+    ;
+    border-radius: 50px;
+  }
+  100% {
+    width: 100%;
+    border-radius: 50px;
+  }
+}
+
+@keyframes Menu {
+  0% {
+    width: 0%;
+    ;
+    border-radius: 50px;
+  }
+  100% {
+    width: 100%;
+    border-radius: 50px;
+  }
+}
+
+@-webkit-keyframes menu {
+  0% {
+    left: -5%;
+    ;
+  }
+  100% {
+    left: 1%;
+  }
+}
+
+@keyframes menu {
+  0% {
+    left: -5%;
+    ;
+  }
+  100% {
+    left: 1%;
+  }
+}

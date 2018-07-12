@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'BebasNeueBold';
+    src: url('../font/9114.otf');
+}
+
+.App__1st-slide {
+    height: 100vh;
+    width: 100%;
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .3), rgba(248, 248, 248, 0.466));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: black;
+}
+
+.App__1st-slide_landscape {
+    position: absolute;
+    z-index: -1;
+}
+
+.App_1st-slide_main {
+    width: 100%;
+    background: -webkit-linear-gradient( rgba(0, 101, 253, 1), rgb(207, 204, 203));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: perspective(2500px) rotateY(0deg);
+    transform: perspective(2500px) rotateY(0deg);
+}
+
+.App_1st-slide_main_click {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    height: 98%;
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transform: perspective(2500px) rotateY(-25deg);
+    transform: perspective(2500px) rotateY(-25deg);
+}
+
+.tree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-image: url(../img/landscape.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.App__1st-slide_About {
+    margin-top: -5%;
+    font-family: 'BebasNeueBold';
+    text-align: center;
+    color: rgb(252, 252, 252);
+    letter-spacing: 5px;
+    text-shadow: 6px 4px 3px #666;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.App__1st-slide_About h1 {
+    letter-spacing: 10px;
+    position: relative;
+}
+
+.App__1st-slide_About span {
+    position: relative;
+    margin-top: -5%;
+    font-size: 1.5em;
+}
+
+.App_1st-slide_menu {
+    height: 100%;
+    background: rgb(29, 27, 27);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.App_1st-slide_button {
+    width: 100%;
+    height: 10%;
+    background: url(../img/menu-icon.png) no-repeat;
+    background-size: 70%;
+    background-position: center;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.App_1st-slide_button_click {
+    background: url(../img/icon-cross.png) no-repeat;
+    background-size: 70%;
+    background-position: center;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.App_1st-slide_menu_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+}
+
+.App_1st-slide_menu_link {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(29, 27, 27);
+    -webkit-transition: all 3s;
+    transition: all 3s;
+}
+
+.App_1st-slide_menu_link:hover {
+    -webkit-transition: all 2s;
+    transition: all 2s;
+    background-color: rgba(22, 218, 208, 0.822)
+}
+
+.icon {
+    width: 50x;
+    height: 50px;
+    display: block;
+    opacity: 0.8;
+}
+
+.App_1st-slide_menu_nav1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 10%;
+    height: 30%;
+}
+
+.App_1st-slide_menu_nav1 a {
+    text-decoration: none;
+    color: dodgerblue;
+    opacity: 0.8;
+}
+
+.App_1st-slide_menu_nav1_item {
+    display: block;
+    width: 104px;
+    height: 10%;
+    margin: 1px;
+    color: white;
+}
+
+.App_1st-slide_menu_nav1_item::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.App_1st-slide_menu_nav1_item:hover::after {
+    content: '';
+    -webkit-animation: link 0.5s forwards;
+    animation: link 0.5s forwards;
+    background: rgb(13, 229, 236);
+}
+
+.item_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100%;
+}
+
+.languageButton {
+    min-width: 80px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 5%;
+    margin-top: 3%;
+    z-index: 1;
+}
+
+.languageButton_ru {
+    width: 48%;
+    height: 100%;
+    border-radius: 5px;
+    background: url(../img/iconRussia.png) no-repeat;
+    background-size: 130%;
+    border: 0px;
+    background-position: center center;
+}
+
+.languageButton_en {
+    width: 48%;
+    height: 100%;
+    border-radius: 5px;
+    background: url(../img/iconBritan.png) no-repeat;
+    background-size: 130%;
+    border: 0px;
+    background-position: center center;
+}
+
+@-webkit-keyframes link {
+    0% {
+        width: 0%;
+        ;
+        border-radius: 50px;
+    }
+    100% {
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+
+@keyframes link {
+    0% {
+        width: 0%;
+        ;
+        border-radius: 50px;
+    }
+    100% {
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 100vw) {
+    .App__1st-slide_About h1 {
+        letter-spacing: 5px;
+        font-size: calc(40px + (18 - 14) * ( (100vw - 480px) / ( 1024 - 480)));
+    }
+    a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .App_1st-slide_main_click {
+        -webkit-transform: perspective(2500px) rotateY(-30deg);
+        transform: perspective(2500px) rotateY(-30deg);
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .App__1st-slide_About span {
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+    .App_1st-slide_main_click {
+        -webkit-transform: perspective(2500px) rotateY(-42deg);
+        transform: perspective(2500px) rotateY(-42deg);
+    }
+}
+
+@media screen and (max-height: 465px) {
+    .App__1st-slide_About {
+        width: 100%;
+    }
+}
