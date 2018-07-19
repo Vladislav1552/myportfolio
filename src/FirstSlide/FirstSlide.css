@@ -223,7 +223,7 @@
     -ms-flex-direction: column;
     flex-direction: column;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 15%;
     height: 30%;
 }
 
@@ -346,9 +346,10 @@
 
 @media screen and (max-width: 680px) {
     .App_1st-slide_main_click {
-        -webkit-transform: perspective(2500px) rotateY(-30deg);
-        transform: perspective(2500px) rotateY(-30deg);
+        -webkit-transform: perspective(2500px) rotateY(-43deg);
+        transform: perspective(2500px) rotateY(-43deg);
     }
+
 }
 
 @media screen and (max-width: 465px) {
@@ -357,8 +358,12 @@
         letter-spacing: 2px;
     }
     .App_1st-slide_main_click {
-        -webkit-transform: perspective(2500px) rotateY(-42deg);
-        transform: perspective(2500px) rotateY(-42deg);
+        -webkit-transform: perspective(2500px) rotateY(-50deg);
+        transform: perspective(2500px) rotateY(-50deg);
+    }
+    .tree {
+        background-size: 100% 40%;
+        background-position: 50% 100%;
     }
 }
 

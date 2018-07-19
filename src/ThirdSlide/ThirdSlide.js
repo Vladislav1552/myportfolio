@@ -11,12 +11,11 @@ import aboutpicture from '../img/aboutpicture.png';
 class ThirdSlide extends Component {
 
     render() {
-     
+
         return (
             <section className='App__3st-slide' id='Skills'>
                 <video autoPlay loop>
-                    <source src={videoWebm} type="video/webm"  />
-                    <source src={videoMp4} type="video/mp4" />
+                    <source src={videoWebm} type="video/webm" />
                 </video>
                 <div className='App__3st-slide_skills'>
                     <div className={`App__3st-slide_skill App__3st-slide_skill--HTML5 `} ><span className='App__3st-slide_skill-text'> HTML5 </span></div>
@@ -29,7 +28,8 @@ class ThirdSlide extends Component {
                     <div className={`App__3st-slide_skill App__3st-slide_skill--Github `} ><span className='App__3st-slide_skill-text'>Github </span></div>
                 </div>
                 <div className='App__3st-slide-photo'><h1 data-translate-key="Skills of working with the githab">Skills of working with the githab</h1><img src={tree} className='App__3st-slide-photo-tree' alt='tree' />
-                    <div className='App__3st-slide-AboutSkillContainerMain'> <div className='App__3st-slide-AboutSkillContainer  '><h1 data-translate-key="Adaptive site layout">Adaptive site layout</h1><img src={adaptiv} className='App__3st-slide-picture' alt='tree' /></div>
+                    <div className='App__3st-slide-AboutSkillContainerMain'> 
+                        <div className='App__3st-slide-AboutSkillContainer  '><h1 data-translate-key="Adaptive site layout">Adaptive site layout</h1><img src={adaptiv} className='App__3st-slide-picture' alt='tree' /></div>
                         <div className='App__3st-slide-AboutSkillContainer '><h1 data-translate-key="Willingness to work as a team">Willingness to work as a team</h1><img src={team} className='App__3st-slide-picture ' alt='team' /></div>
                         <div className='App__3st-slide-AboutSkillContainer '><h1 data-translate-key="Web development methodology is BEM">Web development methodology is BEM</h1><img src={bem} className='App__3st-slide-picture' alt=' BEM' /></div>
                     </div>

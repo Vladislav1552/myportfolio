@@ -9,6 +9,7 @@ import video from './video/videoplayback.mp4'
 import FourthSlide from './FourthSlide/FourthSlide.js'
 
 class App extends Component {
+  
  /* constructor(props) {
     super(props);
     this.state = {
@@ -28,6 +29,16 @@ class App extends Component {
   */
 
   componentDidMount() {
+    function deleteAllCookies() {
+      var cookies = document.cookie.split(";");
+      for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+        document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+      }
+    }
+    deleteAllCookies()
     $(document).ready(function () {
       $('a[data-translate-key="Feedback"]').click(function () {
         $('.App__4st-slide_contact').addClass('Shadow')
@@ -45,9 +56,9 @@ class App extends Component {
         */
    $(window).scroll(function () {
         if ($(window).scrollTop() > 120) {
-          $('.App__2st-slide_imageHtmlCssJs').fadeIn(2000) && $('.App__2st-slide_about').fadeIn(2000);
+          $('.App__2st-slide_imageHtmlCssJs').fadeIn(2000) && $('.App__2st-slide_text').fadeIn(2000) && $('.App-logo').fadeIn(2000);
         } else {
-          $('.App__2st-slide_imageHtmlCssJs').fadeOut(400) && $('.App__2st-slide_about').fadeOut(400);
+          $('.App__2st-slide_imageHtmlCssJs').fadeOut(400) && $('.App__2st-slide_text').fadeOut(400) && $('.App-logo').fadeOut(400);
         }
         if ($(window).scrollTop() > 450) {
 

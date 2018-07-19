@@ -344,6 +344,7 @@ a {
     width: 35px;
     height: 35px;
     border-radius: 50%;
+    margin-right: 10px;
     background: url(../img/career.png) no-repeat rgb(158, 144, 144);
     background-size: 180%;
     background-position: 40% 20%;
@@ -521,6 +522,10 @@ a {
     width: 50%;
 }
 
+.App__4st-slide_CareerWrapper:nth-child(5) {
+    margin-bottom: 5%;
+}
+
 .App__4st-slide_education {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -536,7 +541,7 @@ a {
     -ms-flex-flow: column wrap;
     flex-flow: column wrap;
     font-family: 'Comfortaa', cursive;
-    font-size: 1.1em;
+    font-size: 1em;
     height: auto;
     text-align: left;
     width: 90%;
@@ -647,6 +652,7 @@ a {
     height: 0px;
     display: block;
     position: absolute;
+    top:-12%;
 }
 
 .App__4st-slide_react-game-button:hover::before {
@@ -683,6 +689,7 @@ a {
         width: 100%;
     }
 }
+
 
 @media screen and (max-width: 550px) {
     .App__4st-slide {

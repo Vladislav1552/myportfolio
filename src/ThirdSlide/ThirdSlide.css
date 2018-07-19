@@ -9,7 +9,7 @@ body {
 }
 
 .App__3st-slide {
-    height: 120vh;
+    height: 100%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -91,9 +91,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
 }
-button{
 
-}
 .App__3st-slide-photo {
     width: 75%;
     height: 100%;
@@ -127,7 +125,7 @@ button{
     display: flex;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: flex-start;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -136,6 +134,7 @@ button{
     -ms-flex-direction: column;
     flex-direction: column;
     width: 30%;
+    height: 250px;
     border-radius: 15px;
     margin-bottom: 5%;
     margin-top: 10%;
@@ -156,13 +155,9 @@ button{
     text-align: center;
 }
 
-.App__3st-slide-AboutSkillContainer:last-child {
-    margin-top: 12%;
-}
-
 .App__3st-slide-picture {
-    width: 50%;
-    height: 50%;
+    width: 150px;
+    height: 150px;
     border-radius: 15px;
 }
 
@@ -233,6 +228,9 @@ button{
     .App__3st-slide-picture {
         margin-top: -5%;
     }
+    .App__3st-slide {
+        background: linear-gradient(0deg, rgb(1, 0, 14) 0%, rgba(0, 0, 0, 1) 2%, rgba(244, 244, 244, 1) 17%, rgba(255, 255, 255, 1) 100%);
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -253,9 +251,10 @@ button{
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        height: 160vh;
-        background: -webkit-linear-gradient( rgba(248, 248, 248, 0.466), rgba(0, 0, 0, .3));
         font-size: 20px;
+    }
+    .App__3st-slide-AboutSkillContainer:last-child {
+        margin-bottom: 10%;
     }
     .App__3st-slide_skills {
         height: 35%;
@@ -277,10 +276,6 @@ button{
     }
     .App__3st-slide_skill-text {
         color: black;
-    }
-    .App__3st-slide-picture {
-        width: 50%;
-        height: 80%;
     }
     .App__3st-slide-photo-tree {
         height: 20%;
@@ -310,6 +305,7 @@ button{
         flex-direction: column;
     }
 }
+
 
 @media screen and (max-width: 100vw) {
     .App__3st-slide-AboutSkillContainer {

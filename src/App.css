@@ -20,9 +20,3 @@ body {
   flex-direction: column;
 }
 
-.App-logo {
-  -webkit-animation: logo infinite 20s linear;
-  animation: logo infinite 20s linear;
-  width: 35%;
-  height: 35%;
-}

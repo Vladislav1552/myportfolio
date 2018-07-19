@@ -14,6 +14,7 @@ export let dict = {
         'Sociability': 'Sociability',
         'SkillTeam':'Skill to work in team',
         'Adapt':' Quickly adapt in new conditions',
+        'Education': 'Education',
         /////////////////////////////////////////////////
         'My story':'My story',
         'First step':'First step',
@@ -43,7 +44,11 @@ export let dict = {
         "Adaptive site layout": "Adaptive site layout",
         "Willingness to work as a team":"Willingness to work as a team",
         "Web development methodology is BEM": "Web development methodology is BEM",
-
+        ///////////////////////////////////////////////Slider
+        'Slider_1st Slide':'Нey there! My name is Vlad and I am constantly improving in the field of web development. From the beginning - it was the middle of 2016- it have been written a lot lines of code. I try not to miss new opportunities and not to forget the basics.',
+        "Slider_2wo Slide": 'I am well in adapting to new conditions. During the training courses we were taught to work in a team and be able to work on one project.',
+        "Slider_3th Slide-main": 'Main skills',
+        "Slider_errorMessage": 'Not so fast',
     },
     ru: {
         'Vladislav Vorobyev':'Владислав Воробьёв',
@@ -58,6 +63,7 @@ export let dict = {
         'Sociability':'Коммуникабельность',
         'SkillTeam':'Умение работать в команде',
         'Adapt':' Быстро адаптироваться в новых условиях',
+        'Education':'Образование',
         /////////////////////////////////////////////////
         'My story': 'Моя история',
         'First step': 'Первые шаги',
@@ -85,7 +91,12 @@ export let dict = {
         "Skills of working with the githab": "Опыт работы с Githab",
         "Adaptive site layout":"Адаптивная верстка",
         "Willingness to work as a team":"Умение работать в команде",
-        "Web development methodology is BEM":"Верстка по методологии БЭМ"
+        "Web development methodology is BEM":"Верстка по методологии БЭМ",
+         ///////////////////////////////////////////////Slider
+        'Slider_1st Slide': 'Всем привет !Меня зовут Влад и я постоянно развиваюсь в сфере web разработки.Со своего начала - это была середина 2016г - было написано немало строк кода. Я стараюсь не упускать новые фичи и при этом не забывать основы.',
+        "Slider_2wo Slide":'Я хорошо умею адаптироваться в новых условиях, во время обучения на курсах нас учили работать в команде и уметь работать  над одним проектом.',
+        "Slider_3th Slide-main":'Основные навыки',
+        "Slider_errorMessage":'Тише...'
     }
 },
      

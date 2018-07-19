@@ -4,63 +4,104 @@
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
   align-items: center;
-  height: 80vh;
+  height: 200vh;
   width: 100%;
-  background-image: url(../img/back-react.jpeg);
+  /*background-image: url(../img/back-react.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  */
   -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.App__2st-slide::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-bottom: 5vw solid rgba(171, 244, 255, 0.05);
+  border-right: 100vw solid black;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.App__2st-slide::after {
+  content: '';
+  position: absolute;
+  top: 40%;
+  width: 0;
+  height: 0;
+  border-bottom: 5vw solid rgb(255, 255, 255);
+  border-right: 100vw solid rgba(171, 244, 255, 0.25);
+  overflow: hidden;
+}
+
+.App__2st-slide_about {
+  width: 100%;
+  height: 40%;
+  -webkit-box-ordinal-group: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App__2st-slide_about--color {
+  background-color: rgba(171, 244, 255, 0.25);
+}
+
+.App-logo {
+  -webkit-animation: logo infinite 20s linear;
+  animation: logo infinite 20s linear;
+  width: 50%;
+  height: 50%;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.App__2st-slide_text {
+  display: block;
+  font-family: 'Comfortaa', cursive;
+  color: rgb(253, 255, 255);
+  width: 450px;
+  height: auto;
+  font-size: 18px;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  -webkit-animation: App__2st-slide_about 1s forwards linear;
+  animation: App__2st-slide_about 1s forwards linear;
+  text-transform: capitalize;
 }
 
 .App__2st-slide_imageHtmlCssJs {
-  width: 250px;
+  width: 50px;
   height: 35%;
-  border-radius: 15px;
-  margin-left: 15%;
   background-image: url(../img/web-trifecta_html5_css3_js-strict.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
-  order: 2;
-}
-
-.App__2st-slide_about {
-  -webkit-animation: App__2st-slide_about 1s forwards linear;
-  animation: App__2st-slide_about 1s forwards linear;
-  width: 40%;
-  height: auto;
-  background-color: rgba(141, 135, 135, 0.3);
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
-}
-
-.App__2st-slide_text {
-  margin-top: 5%;
-  display: block;
-  font-family: 'Comfortaa', cursive;
-  color: rgb(175, 243, 255);
 }
 
 @media screen and (max-width: 850px) {
-  .App__2st-slide_about {
-    width: 50%;
-  }
   .App__2st-slide_imageHtmlCssJs {
     margin-left: 0%;
   }
@@ -72,37 +113,14 @@
   }
 }
 
-@media screen and (max-width: 620px) {
-  .App__2st-slide_text {
-    font-size: 0.6em;
-  }
-  .App__2st-slide {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-  }
-  .App__2st-slide_about {
-    width: 80%;
-  }
-}
-
 @media screen and (max-height: 450px) {
   .App__2st-slide_imageHtmlCssJs {
     margin-left: 0%;
   }
   .App__2st-slide_about {
-    width: 50%;
-    margin-top: 5%;
-  }
-  .App__2st-slide {
-    height: 80%;
-  }
-  .App__2st-slide_about {
-    width: 80%;
-    margin-top: 20%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

@@ -10,7 +10,7 @@ class Menu extends Component {
   componentDidMount() {
     $(document).ready(function () {
       $('.click_menu').click(function () {
-//        $('.Menu').toggleClass('wrap')
+
         $('.item').slice(0, 5).slideToggle(1000);
         $('.item').slice(5, 9).fadeOut(1000);
       })

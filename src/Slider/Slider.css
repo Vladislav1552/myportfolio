@@ -1,0 +1,384 @@
+.Slider {
+    height: 110vh;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+
+.Slider_error {
+    display: none;
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: auto;
+    font-family: segoe script;
+    font-size: 20px;
+    top: 93%;
+    right: 3%;
+    color: rgba(255, 35, 35, 0.911);
+    text-shadow: 1px 1px 3px red;
+    z-index: 2;
+}
+
+.Slider--animateRotate {
+    -webkit-animation: error 1s linear alternate infinite;
+    animation: error 1s linear alternate infinite;
+}
+
+@-webkit-keyframes error {
+    from {
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+    to {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+}
+
+@keyframes error {
+    from {
+        -webkit-transform: rotate(-3deg);
+        transform: rotate(-3deg);
+    }
+    to {
+        -webkit-transform: rotate(3deg);
+        transform: rotate(3deg);
+    }
+}
+
+.Slider_status {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 85%;
+    z-index: 2;
+}
+
+.Slider_controle {
+    display: block;
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    top: 88%;
+    left: 8%;
+    z-index: 2;
+    background: url(../img/arrowKeys.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.Slider_status div {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5%;
+    border: 1px solid rgb(32, 33, 34);
+}
+
+.Slider_status div:first-child {
+    background: rgba(53, 189, 252, 1);
+}
+
+.textIcon_content span {
+    color: white;
+}
+
+.Slider_button:first-child {
+    width: 45px;
+    height: 45px;
+    background: url(../img/iconleft.png);
+    border-radius: 50%;
+}
+
+.Slider_button:last-child {
+    width: 45px;
+    height: 45px;
+    background: url(../img/iconright.png);
+    border-radius: 50%;
+}
+
+.Slider_button::before {
+    display: block;
+    width: 45px;
+    height: 45px;
+    content: '';
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    border-radius: 50%;
+    background-color: rgba(93, 135, 226, 0.4);
+    -webkit-transform: scale3d(0, 0, 1);
+    transform: scale3d(0, 0, 1);
+}
+
+.Slider_button:hover::before {
+    -webkit-transform: none;
+    transform: none;
+}
+
+.Slider_Content {
+    width: 60%;
+    height: 70%;
+    overflow: hidden;
+    border: 5px solid rgb(93, 135, 226);
+    border-radius: 40px;
+    position: relative;
+    margin-top: -10%;
+}
+
+.Slider_Content::after {
+    content: '';
+    width: 100%;
+    height: 15%;
+    overflow: hidden;
+    outline: 5px solid rgb(93, 135, 226);
+    position: absolute;
+    top: 85%;
+    z-index: 1;
+    background: rgb(255, 255, 255);
+}
+
+.Slider_Content_wrapper3th {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 70%;
+    height: auto;
+    margin-bottom: 10%;
+}
+
+.ProgressBar--slider {
+    font-size: 15px;
+}
+
+.Slider_Content-slide {
+    display: none;
+    width: 100%;
+    height: 85%;
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: unset;
+    font-family: comic sans ms;
+}
+
+.Slider_Content-slide:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: url(../img/computer-keyboards.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: rgb(228, 219, 204);
+}
+
+.Slider_Content-slide_logo:first-child {
+    width: 90%;
+    height: auto;
+    margin-top: -5%;
+    margin-left: 5%;
+    line-height: 1.2em;
+    z-index: 2;
+}
+
+.Slider_Content-slide:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: url(../img/missingpiece.jpg) no-repeat;
+    background-size: 100% 100%;
+    color: rgb(255, 255, 255);
+}
+
+.Slider_Content-slide:nth-child(2)::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.Slider_Content-slide:nth-child(2) span {
+    opacity: 0.95;
+}
+
+.Slider_Content-slide:nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    font-family: trebuchet ms;
+}
+
+.Slider_Content_logo3th {
+    display: block;
+    font-family: segoe print;
+}
+
+.Slider_Content-slide:nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    background: url(../img/contact.png) no-repeat rgba(0, 0, 0, 0.808);
+    background-size: 70%;
+    background-position-x: 50%;
+}
+
+.Slider_Content-wrapperContact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 80%;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-bottom: -5%;
+}
+
+@media screen and (max-width: 620px) {
+    .Slider_Content-slide:nth-child(3) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .Slider_Content_logo3th {
+        margin-bottom: 0%;
+    }
+    .ProgressBar--slider {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .App__2st-slide_text {
+        font-size: 1em;
+    }
+    .Slider_Content {
+        width: 80%;
+    }
+    .Slider {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .Slider_error {
+        top: 88%;
+        right: 35%;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    .ProgressBar--slider {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    .Slider_controle {
+        top: 86%;
+    }
+    .Slider {
+        margin-bottom: -3%;
+    }
+    .Slider_Content {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 100vw) {
+    .Slider_Content-slide, .Slider_error {
+        font-size: calc(16px + (18 - 14) * ( (100vw - 480px) / ( 1024 - 480)));
+    }
+    .Slider_Content-wrapperContact a {
+        font-size: calc(11px + (18 - 14) * ( (100vw - 480px) / ( 1024 - 480)));
+    }
+}

@@ -141,7 +141,7 @@ class FourthSlide extends Component {
                 </div>
                 <div className='App__4st-slide_CareerWrapper'>
                     <div className='App__4st-slide_CareerType'>
-                        <div></div><span>Education</span>
+                        <div></div><span data-translate-key="Education" >Education</span>
                     </div>
                     <div className='App__4st-slide_education'>
                         <span data-translate-key="EEC&T" className='App__4st-slide_education-icon'> The first higher education | EEC&T</span>
