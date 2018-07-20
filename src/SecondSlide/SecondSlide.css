@@ -18,10 +18,12 @@
   -ms-flex-flow: row wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-flow: column wrap;
+  flex-flow: column wrap;
   position: relative;
   overflow: hidden;
 }
+
+
 
 .App__2st-slide::before {
   content: '';
@@ -55,13 +57,13 @@
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .App__2st-slide_about--color {
@@ -119,8 +121,8 @@
   }
   .App__2st-slide_about {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 

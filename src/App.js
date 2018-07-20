@@ -71,6 +71,7 @@ class App extends Component {
 
         } else {
           $('.Menu').css({ 'display': 'none' })
+          $('.item').slice(0, 9).fadeOut();
         }
       });
     });

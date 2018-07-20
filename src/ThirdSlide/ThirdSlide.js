@@ -9,11 +9,64 @@ import tree from '../img/workflow-illustration.png';
 import adaptiv from '../img/adaptiv.gif';
 import aboutpicture from '../img/aboutpicture.png';
 class ThirdSlide extends Component {
-
+    componentDidMount() {
+        function get_name_browser() {
+            var ua = navigator.userAgent;
+            if (ua.search(/Firefox/) > 0) return 'Firefox';
+        }
+        var browser = get_name_browser();
+     
+        $(document).ready(function () {
+            var i = 0;
+            if (browser==='Firefox') {
+                $('.App__3st-slide_background').fadeOut();
+                $('video').css({
+                    'display':'inline'
+                });
+                Switch(1)
+                i=2
+            }
+                $('.skin').click(function () {
+                    i++
+               
+                    if (i == 1) {
+                        $('video').css({
+                            'display': 'inline'
+                        });
+                        $('.App__3st-slide_background').fadeOut(300);
+                        Switch(1)
+                    } else {
+                        Switch(2)
+                        $('.App__3st-slide_background').fadeIn(300);
+                        $('video').fadeOut();
+                i=0
+                }
+            })
+        })
+        function Switch(e) {
+            if (e == 1) {
+                $('.shin_button').animate({
+                    marginLeft: '60%'
+                }, 500)
+                $('.skin').css({
+                    'background': ' rgb(147, 231, 139)'
+                })
+            } else {
+                $('.shin_button').animate({
+                    marginLeft: '0%'
+                }, 500)
+                $('.skin').css({
+                    'background': 'rgb(228, 127, 127)'
+                })
+            }
+        }
+    }
     render() {
 
         return (
-            <section className='App__3st-slide' id='Skills'>
+            <section className='App__3st-slide ' id='Skills'>
+            <div className='skin'><div className='shin_button'></div></div>
+                <div className='App__3st-slide_background'></div>
                 <video autoPlay loop>
                     <source src={videoWebm} type="video/webm" />
                 </video>

@@ -161,7 +161,7 @@ class FourthSlide extends Component {
                     <div className='App__4st-slide_contact'>
                         <div className='textIcon'>
                             <span className='textIcon_icon textIcon_icon--info'></span>
-                            <h3 className='textIcon_text'>Контактная информация</h3>
+                            <h3 className='textIcon_text ' data-translate-key="Contact information">Contact information</h3>
                         </div>
                         <div className='textIcon'>
                             <span className='textIcon_icon textIcon_icon--phone'></span>
@@ -174,7 +174,7 @@ class FourthSlide extends Component {
                         </div>
                         <div className='textIcon'>
                             <a href='https://yandex.by/maps/158/mogilev/?mode=search&text=%D0%BC%D0%BE%D0%B3%D0%B8%D0%BB%D0%B5%D0%B2&sll=30.331014%2C53.894617&sspn=0.314484%2C0.094497&ll=30.350112%2C53.881573&z=11' target='_blank' className='textIcon_icon textIcon_icon--map'></a>
-                            <div className='textIcon_content'><span>Беларусь</span><span>Могилев</span></div>
+                            <div className='textIcon_content'><span data-translate-key="Belarus">Belarus</span><span data-translate-key="Mogilev">Mogilev</span></div>
                         </div>
                     </div>
                 </div>

@@ -31,6 +31,9 @@ export let dict = {
         "Master's Courses_text":"In March 2018 he graduated from the magistracy and received a master's degree in the direction of Energy.",
         "Master's Courses 2.0": "Master's Courses 2.0",
         "Master's Courses 2.0_text":'In July I enter the magistracy in the specialty: System analysis.',
+        'Contact information':'Contact information',
+        "Belarus": "Belarus",
+        "Mogilev": "Mogilev",
         /////////////////////////////////////////////////main
         "The beginner of the front-end development": "The beginner of the front-end development",
         "Main": "Main",
@@ -80,6 +83,9 @@ export let dict = {
         "Master's Courses_text": 'В марте 2018 года он окончил магистратуру и получил степень магистра в области энергетики.',
         "Master's Courses 2.0":"Магистратура 2.0",
         "Master's Courses 2.0_text":"В июле поступаю в магистратуру по специальности:Cистемный анализ.",
+        'Contact information': 'Контактная информация',
+        "Belarus": "Беларусь",
+        "Mogilev": "Могилев",
         //////////////////////////////////////////////////////////////////////////////main
         "The beginner of the front-end development": "Начинающий веб разработчик",
         "Main": "Главная",
